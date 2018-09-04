@@ -11,10 +11,11 @@
 
         function __construct()
         {
-            $this->servername = "localhost";
-            $this->username = "frangod";
-            $this->password = "pa*2018";
-            $this->database="cars-app-bbdd";
+            
+            $this->servername = "";
+            $this->username = "";
+            $this->password = "";
+            $this->database="";
             $this->connection="";
         }
 
