@@ -87,7 +87,7 @@
 
       //this returns 1 when true, and nothing when false
       
-      $isNameValid=(strlen($dataDecoded['nombre'])>=3) && (strlen($dataDecoded['nombre'])<=100);
+      $isNameValid=(strlen($dataDecoded['nombre'])>=3) && (strlen($dataDecoded['nombre'])<=12);
 
 
      
@@ -153,7 +153,7 @@
 
         /*we check if fields are empty to set a default text (thats why "empty" would be considered valid here) or valid length to store user given text*/
 
-        $isNameValid=(  isTextInputFieldEmpty( $dataDecoded['nombre'] )  ) ||  (  (strlen($dataDecoded['nombre'])>=3) && (strlen($dataDecoded['nombre'])<=100) );
+        $isNameValid=(  isTextInputFieldEmpty( $dataDecoded['nombre'] )  ) ||  (  (strlen($dataDecoded['nombre'])>=3) && (strlen($dataDecoded['nombre'])<=12) );
 
         $isPriceValid=(  isTextInputFieldEmpty( $dataDecoded['precio'] )  ) ||  ( $dataDecoded['precio'] >=0 );
 
